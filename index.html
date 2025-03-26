@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="firebaseAuth.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <input type="checkbox" id="signup_toggle">
+    <form class="form">
+        <div class="form_front">
+            <div class="form_details">SignIn</div>
+            <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+            <input id="signIn_email" placeholder="Email" class="input" type="email">
+            <input id="signIn_password" placeholder="Password" class="input" type="password">
+            <button class="btn" type="button" id="submitSignIn">SignIn</button>
+            <span class="switch">Don't have an account? 
+                <label class="signup_tog" for="signup_toggle">
+                    SignUp
+                </label>
+            </span>
+        </div>
+        <div class="form_back">
+            <div class="form_details">SignUp</div>
+            <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+            <input id="signup_email" placeholder="Email" class="input" type="email">
+            <input id="signup_username" placeholder="Username" class="input" type="text">
+            <input id="signup_password" placeholder="Password" class="input" type="password">
+            <button class="btn" type="button" id="submitSignUp">Signup</button>
+            <span class="switch">Already have an account?
+                <label class="signup_tog" for="signup_toggle">
+                    SignIn
+                </label>
+            </span>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
